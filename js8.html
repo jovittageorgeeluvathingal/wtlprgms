@@ -1,0 +1,25 @@
+<html>
+    <body>
+        Numbers from 0 -15 <br>
+        <button onclick="disp()">Display</button>
+        <p id="res"></p>
+        <script>
+            function disp()
+            {
+                for (var x=0; x<=15; x++) 
+                {
+                    var result = document.getElementById("res").textContent;
+                    if (x === 0) {
+                        document.getElementById("res").innerHTML=result + (x + " is even ") ;
+                    }
+                    else if (x % 2 === 0) {
+                        document.getElementById("res").innerHTML= result + (x + " is even");
+                    }
+                    else {
+                    document.getElementById("res").innerHTML= result + (x + " is odd");
+                    }
+                } 
+            }
+        </script>
+    </body>
+</html>

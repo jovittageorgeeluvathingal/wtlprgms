@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <script>
+            function countWords(str)
+{
+
+  if (str.length == 0) {
+    return 0;
+  }
+  string = [];
+  var temp = "";
+  for (var i = 0; i < str.length; i++) {
+    if (str[i] == " ") {
+      string.push(temp);
+      temp = "";
+    }
+    else {
+      temp += str[i];
+    }
+  }
+ 
+  var count = 1;
+ 
+  for (var i = 0; i < string.length; i++) {
+    if (string[i].length != 0)
+      count++;
+  }
+  return count;
+}
+
+  var str = "B Arya Jagish";
+  console.log("No of words : " +countWords(str));
+        </script>
+    </body>
+</html>

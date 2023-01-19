@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>alphabetical order</title>
+</head>
+<body>
+    <script>
+        function alpha(str)
+        {
+            var a=str.split("");
+            a.sort();
+            var sorteda=a.join("");
+
+            alert(`${str}=${sorteda}`);
+           
+        }
+        let str=(prompt("Enter the string"));
+        alpha(str);
+
+    </script>
+</body>
+</html>

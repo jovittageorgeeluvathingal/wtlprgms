@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<body>
+    Given 5 numbers:
+    <p id="bsort"></p>
+    Elements in the array after sorting 
+    <p id="asort"></p>
+</body>
+<script>
+    var inputArray = [];
+    var size =5;
+    for(var i=0; i<size; i++)
+    {
+        inputArray[i] = prompt('Enter Element ' + (i+1));
+    }
+    document.getElementById("bsort").innerHTML=inputArray;
+    document.getElementById("asort").innerHTML=Math.max(...inputArray);
+</script>
+</html>
